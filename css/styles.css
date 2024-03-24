@@ -34,6 +34,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
@@ -64,17 +66,21 @@ body {
 .contacts-item:focus {
   color: #404bbf;
 }
-.hero,
-.footer {
+.hero {
   background-color: var(--navy-blue-color);
+  text-align: center;
+  margin-bottom: 120px;
 }
 .slogan {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07em;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 48px;
 }
 
 .order-btn {
@@ -86,6 +92,11 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  min-width: 169px;
+  border-width: 0;
+  text-align: center;
 }
 
 .order-btn:hover {
@@ -104,6 +115,8 @@ body {
   line-height: 1.2em;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .desc-bnf,
@@ -114,6 +127,8 @@ body {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--contacts-item-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-header {
@@ -124,6 +139,8 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--navy-blue-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-info {
@@ -132,6 +149,10 @@ body {
 
 .member-info {
   background-color: #fff;
+}
+
+.footer {
+  background-color: var(--navy-blue-color);
 }
 
 .footer-slogan {
@@ -161,4 +182,15 @@ body {
 .filter-btn:focus {
   color: #ffffff;
   background-color: var(--hover-btn-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1128px;
+  outline: 2px solid tomato;
+}
+
+.page-header {
+  background-color: #ccc;
 }
