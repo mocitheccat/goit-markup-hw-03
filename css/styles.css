@@ -14,6 +14,16 @@ body {
   background-color: var(--bg-color);
 }
 
+.container {
+  outline: 2px solid tomato;
+
+  width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -22,6 +32,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  margin-right: 76px;
+  display: inline-block;
+  padding: 24px;
 }
 
 .link {
@@ -33,9 +46,23 @@ body {
 }
 
 .list {
-  list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
+
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav,
+.nav-container {
+  display: flex;
+}
+
+.nav-container {
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-item {
@@ -44,6 +71,10 @@ body {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--nav-item-color);
+}
+li:not(:last-child) .nav-item,
+li:not(:last-child) .contacts-item {
+  margin-right: 40px;
 }
 
 .nav-item:hover,
@@ -66,12 +97,14 @@ body {
 .contacts-item:focus {
   color: #404bbf;
 }
+
 .hero {
   background-color: var(--navy-blue-color);
   text-align: center;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
-.slogan {
+
+.hero-title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 56px;
@@ -121,7 +154,7 @@ body {
 
 .desc-bnf,
 .member-position,
-.footer-slogan,
+.footer-title,
 .card-desc {
   font-weight: 400;
   line-height: 1.5em;
@@ -131,7 +164,7 @@ body {
   margin-bottom: 0;
 }
 
-.section-header {
+.section-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11em;
@@ -140,11 +173,13 @@ body {
   text-transform: capitalize;
   color: var(--navy-blue-color);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 72px;
 }
 
-.team-info {
+main .section:last-child {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .member-info {
@@ -155,7 +190,7 @@ body {
   background-color: var(--navy-blue-color);
 }
 
-.footer-slogan {
+.footer-title {
   color: var(--cloud-color);
 }
 
@@ -184,13 +219,10 @@ body {
   background-color: var(--hover-btn-color);
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1128px;
-  outline: 2px solid tomato;
-}
-
-.page-header {
+/* .page-header {
   background-color: #ccc;
+} */
+
+.section:not(:last-child) {
+  margin-bottom: 120px;
 }
